@@ -1,0 +1,65 @@
+
+.bestProduct .txtType2{
+    margin-bottom: 2rem;
+}
+.bestProductPageTitle{
+    position: sticky;
+    top: 130px;
+    left: 0;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.85);
+}
+.reviewBestSwiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.reviewBestSwiper.swiper {
+    width: 300px;
+    height: 300px;
+}
+@media screen and (max-width:450px){
+    .reviewBestSwiper.swiper{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.reviewBestSwiper .swiper-slide {
+    background-position:center;
+    background-size: cover;
+}
+
+.reviewBestSwiper .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+}
+.reviewBestSwiper .swiper-horizontal>.swiper-pagination-bullets, 
+.reviewBestSwiper .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.reviewBestSwiper .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -30px;
+}
+
+.miniBannerContent{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.weeklyBest__txt{
+    margin-top: 1rem;
+}
+@media screen and (max-width:768px){
+    .miniBannerContent{
+        display: grid;
+    }
+}
+.miniBanner{
+    overflow: hidden;
+}
+.miniBanner:hover img{
+    transform: scale(1.1);
+}
+.miniBanner img{
+    width: 100%;
+    transition: all 0.4s;
+}

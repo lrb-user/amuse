@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/bestProduct.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bestProduct.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="backPan"></div>
+        <div class="fixedTop">TOP</div>
+        <header>
+            <div class="header__top">
+                <ul class="login">
+                    <li>
+                        <a href="index.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="index.html">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="index.html">멤버십</a>
+                    </li>
+                    <li>
+                        <a href="index.html">리워드</a>
+                    </li>
+                    <li>
+                        <a href="index.html">고객센터</a>
+                    </li>
+                </ul>
+                <div class="logoBox">
+                    <h1 class="logo">
+                        <a href="index.html"></a>
+                    </h1>
+                    <div class="searchBox">
+                        <input type="text" placeholder="마켓셀러 지원만 해도 2,000P😘">
+                    </div>
+                    <div class="hamBtn">
+                        <div class="line" id="line_top"></div>
+                        <div class="line" id="line_mid"></div>
+                        <div class="line" id="line_bot"></div>
+                    </div>
+                </div>
+                <div class="mMenu">
+                    <div class="searchBox__mo">
+                        <input type="text" placeholder="마켓셀러 지원만 해도 2,000P😘">
+                    </div>
+                    <ul class="userInfo__mo">
+                        <li style="position: relative;">
+                            <a href="index.html">마이페이지</a>
+                            <div class="pointBox">
+                                <div class="arrowUp"></div>
+                                    5000P 혜택
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index.html">최근본상품</a>
+                        </li>
+                        <li>
+                            <a href="index.html">장바구니</a>
+                        </li>
+                    </ul>
+                    <ul class="gnb">
+                        <li class="depth1">
+                            <span>SHOP ALL</span>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="index.html">SUMMER GLOW</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">BEST</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">ONLY AMUSE</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">FACE</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">SUNCARE</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">LIP</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">EYE</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">WELLNESS</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">AgoodAMUSE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="index.html">SHOW ROOM</a>
+                        </li>
+                        <li class="depth1">
+                            <span>STORE</span>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="index.html">OFFLINE STORE</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">ONLINE STORE</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">GLOBAL STORE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <span>COMMUNITY</span>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="index.html">EVENT</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">REVIEW</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">NOTICE</a>
+                                </li>
+                                <li>
+                                    <a href="index.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>          
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main style="padding-top:130px;">
+            <div class="mx1200 txt-center bestProductPageTitle">
+                <h2 class="h2-2 pageTitle">AMUSE 베스트</h2>
+                <ul class="tabType1 align center mt35">
+                    <li class="active sec1">
+                        <a href="#sec1">주간 베스트</a>
+                    </li>
+                    <li class="sec2">
+                        <a href="#sec2">카테고리별 베스트</a>
+                    </li>
+                    <li class="sec3">
+                        <a href="#sec3">리뷰 베스트</a>
+                    </li>
+                    <li class="sec4">
+                        <a href="#sec4">어워드 베스트</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 주간베스트 -->
+            <section id="sec1">
+                <div class="bestProduct weeklyBestContent mx1200">
+                    <h3 class="h3">주간베스트</h3>
+                    <p class="txtType2">최근 한주간 가장 많이 판매된 제품입니다.</p>
+                    <ul class="listType3">
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/weeklyBest/weeklyBest1.jpg" alt="">
+                                    <div class="bestMark">BEST1</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">제품이름입니다.</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/weeklyBest/weeklyBest2.jpg" alt="">
+                                    <div class="bestMark">BEST2</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">제품이름입니다.</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/weeklyBest/weeklyBest3.jpg" alt="">
+                                    <div class="bestMark">BEST3</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">제품이름입니다.</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/weeklyBest/weeklyBest4.jpg" alt="">
+                                    <div class="bestMark">BEST4</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">제품이름입니다.</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/weeklyBest/weeklyBest5.jpg" alt="">
+                                    <div class="bestMark">BEST5</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">제품이름입니다.</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/weeklyBest/weeklyBest6.jpg" alt="">
+                                    <div class="bestMark">BEST6</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">제품이름입니다.</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/weeklyBest/weeklyBest7.jpg" alt="">
+                                    <div class="bestMark">BEST7</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">제품이름입니다.</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/weeklyBest/weeklyBest8.jpg" alt="">
+                                    <div class="bestMark">BEST8</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">제품이름입니다.</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 카테고리별 베스트 -->
+            <section id="sec2">
+                <div class="bestProduct categoryBestContent mx1200">
+                    <h3 class="h3">카테고리별 베스트</h3>
+                    <p class="txtType2">각 카테고리별 기준 최근 한주간 가장 많이 판매된 제품입니다.</p>
+                    <ul class="listType3">
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/cateBestpdt/base1.jpg" alt="">
+                                    <div class="categoryMark">베이스메이크업</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">세라믹 스킨 퍼펙터 쿠션(본품+리필)</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">20%</div>
+                                        <div class="salePrice">58,000원</div>
+                                        <div class="originPrice">31,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/cateBestpdt/lip1.jpg" alt="">
+                                    <div class="categoryMark">립 메이크업</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">어뮤즈 젤핏 틴트 버니 텅</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">5%</div>
+                                        <div class="salePrice">17,000원</div>
+                                        <div class="originPrice">20,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/cateBestpdt/wellness1.jpg" alt="">
+                                    <div class="categoryMark">wellness</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">비건 콩 핸드크림+스쿼저 세트</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">27,000원</div>
+                                        <div class="originPrice">36,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/cateBestpdt/tool1.jpg" alt="">
+                                    <div class="categoryMark">미용소품</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">말랑 젤리 립 브러쉬</div>
+                                    <div class="pdtPrice">
+                                        <div class="salePrice">10,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/cateBestpdt/eye1.jpg" alt="">
+                                    <div class="categoryMark">아이 메이크업</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">아이 비건 쉬어 팔레트</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">3%</div>
+                                        <div class="salePrice">27,000원</div>
+                                        <div class="originPrice">29,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/cateBestpdt/sunCare1.jpg" alt="">
+                                    <div class="categoryMark">선케어</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">맑은 수분 365 비건 선크림</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">24,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/cateBestpdt/eye2.jpg" alt="">
+                                    <div class="categoryMark">아이 메이크업</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">애교살 볼륨 메이크업 세트</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">14,000원</div>
+                                        <div class="originPrice">26,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="img">
+                                    <img src="images/cateBestpdt/base2.jpg" alt="">
+                                    <div class="categoryMark">베이스 메이크업</div>
+                                </div>
+                                <div class="weeklyBest__txt">
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">립 앤 치크 헬시 밤 듀오 세트</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 리뷰 베스트 -->
+            <section id="sec3">
+                <div class="bestProduct reviewBestContent mx1200">
+                    <h3 class="h3">리뷰 베스트</h3>
+                    <p class="txtType2">쇼핑을 도와줄 생생한 구매 후기를 확인하세요!</p>
+                    <ul class="listType4">
+                        <li>
+                            <a href="index.html">
+                                <div class="listType4__pdtInfo">
+                                    <div class="bestReviewMark">
+                                        <div>BEST</div>
+                                        <div>REVIEW</div>
+                                    </div>
+                                    <div class="pdtInfo">
+                                        <div class="img">
+                                            <img src="images/pdtInfoImg/pdtInfoImg1.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="pdtHead">톤업+선크림+베이스를 한번에!</div>
+                                            <div class="pdtBrand">AMUSE</div>
+                                            <div class="pdtName">듀 웨어 파운데이션</div>
+                                            <div class="pdtPrice">
+                                                <div class="disCount">10%</div>
+                                                <div class="salePrice">19,000원</div>
+                                                <div class="originPrice">21,000원</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listType4__review">
+                                    <div>
+                                        <span class="badgeType3 pink">PINK</span>
+                                        <span class="userInfo__id">Linda***</span>
+                                    </div>
+                                    <div class="txt-center">
+                                        <span style="font-size:1.6rem; font-weight: bold;">인생 파운데이션을 드디어!!만났어요</span>
+                                    </div>
+                                    <div class="reviewImg">
+                                        <div class="swiper mySwiper reviewBestSwiper reviewBestSwiper1">
+                                            <div class="swiper-wrapper">
+                                              <div class="swiper-slide">
+                                                <img src="images/review/userReview1.png" />
+                                              </div>
+                                              <div class="swiper-slide">
+                                                <img src="images/pdtInfoImg/pdtInfoImg1.jpg" />
+                                              </div>
+                                              <div class="swiper-slide">
+                                                <img src="images/pdtInfoImg/pdtInfoImg2.png" />
+                                              </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="pdtName">듀 웨어 파운데이션</div>
+                                        <div class="review scroll">
+                                            베이스 유목민이라 이것저것 사보고 있는 중이에요.
+                                            아뮤즈도 입소문이 좋길래 반신반의 하며 구입을 해봤는데,
+                                            너무 좋아요! 
+                                            건성인데 갈라지지도 않고 스킨케어 꼼꼼히 안해도 찰떡같이 잘 발라져요.
+                                            커버력도 좋은 편이라 아뮤즈 베이스 바르면 따로 컨실러를 안바른답니다! 
+                                            이제 드디어 베이스 유목민 생활이 종료될거 같아서 기쁨의 눈물이 주르륵..
+                                            이거 단종되면...안대여....제발...!!!!!!
+                                            아뮤즈 사랑합니다...
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="listType4__reviewTag">
+                                    <li>
+                                        <div class="title">피부결 정돈</div>
+                                        <div class="badgeType5">결이 정돈 돼요</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">커버력</div>
+                                        <div class="badgeType5">잘 가려줘요</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">자연스러움</div>
+                                        <div class="badgeType5">자연스러워요</div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <div class="listType4__pdtInfo">
+                                    <div class="bestReviewMark">
+                                        <div>BEST</div>
+                                        <div>REVIEW</div>
+                                    </div>
+                                    <div class="pdtInfo">
+                                        <div class="img">
+                                            <img src="images/pdtInfoImg/pdtInfo3.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="pdtHead">맑고 다채로운 비건 아이메이크업</div>
+                                            <div class="pdtBrand">AMUSE</div>
+                                            <div class="pdtName">아이 컬러 팔레트</div>
+                                            <div class="pdtPrice">
+                                                <div class="disCount">10%</div>
+                                                <div class="salePrice">19,000원</div>
+                                                <div class="originPrice">21,000원</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listType4__review">
+                                    <div>
+                                        <span class="badgeType3 gold">gold</span>
+                                        <span class="userInfo__id">Ame***</span>
+                                    </div>
+                                    <div class="txt-center">
+                                        <span style="font-size:1.6rem; font-weight: bold;">제눈이..2배가 커졌어요..!!!</span>
+                                    </div>
+                                    <div class="reviewImg">
+                                        <div class="swiper mySwiper reviewBestSwiper reviewBestSwiper2">
+                                            <div class="swiper-wrapper">
+                                              <div class="swiper-slide">
+                                                <img src="images/review/userReview2.png" />
+                                              </div>
+                                              <div class="swiper-slide">
+                                                <img src="images/review/userReview3.png" />
+                                              </div>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="pdtName">아이 컬러 팔레트</div>
+                                        <div class="review scroll">
+                                            제눈이 2배가 커졌어요..아뮤즈 도대체 무슨 짓을 한거죠???
+                                            저는 웜톤이라 01 웜 복숭아 색깔로 구입했어요.!
+                                            제목 그대로 복숭아가 제 눈에 착! 하고 앉은듯한 눈이 되버린거 있죠...
+                                            완전 찰떡이에요. 그리고 쿨톤이신 분들도 너무 잘어울릴거같아요!!
+                                            그리고 지속력이 좋더라구요. 출근할때 발라서 퇴근하고 집에 돌아와서 
+                                            거울보면 눈 화장만 되어있더라구요!!!
+                                            이거이거 아주 요물입니다. 아마 평생 사용하지 않을까 싶어요!ㅋㅋㅋㅋ
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="listType4__reviewTag">
+                                    <li>
+                                        <div class="title">발림섬</div>
+                                        <div class="badgeType5">부드럽게 발려요</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">날림성</div>
+                                        <div class="badgeType5">가루날림 없어요</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">지속력</div>
+                                        <div class="badgeType5">지속력 완전 굳</div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 어워드 베스트 -->
+             <section id="sec4">
+                <div class="bestProduct awardBestContent mx1200">
+                    <h3 class="h3">어워드 베스트</h3>
+                    <p class="txtType2">믿고 사는 바닐라!수상 내역을 확인하세요.</p>
+                    <ul class="listType5">
+                        <li>
+                            <div class="img">
+                                <img src="images/mdPick/mdPick1.jpg" alt="">
+                            </div>
+                            <div class="listType5__pdtInfo">
+                                <div class="categoryMark">립 메이크업 부분 위너</div>
+                                <div class="pdtTxt">
+                                    <div class="pdtHead">따뜻하면서도 순수한 봄을 담은 틴트</div>
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">베베 틴트 듀오+키링세트</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="images/mdPick/mdPick2.jpg" alt="">
+                            </div>
+                            <div class="listType5__pdtInfo">
+                                <div class="categoryMark">베이스 메이크업</div>
+                                <div class="pdtTxt">
+                                    <div class="pdtHead">70%에센스 스킨 컨디셔닝 생과즙광</div>
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">립 앤 치크 헬시 밤 듀오 세트</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="images/mdPick/mdPick3.jpg" alt="">
+                            </div>
+                            <div class="listType5__pdtInfo">
+                                <div class="categoryMark">쿠션 파운데이션 부분 위너</div>
+                                <div class="pdtTxt">
+                                    <div class="pdtHead">초밀착&초슬림 세미 매트 데일리 비건 쿠션</div>
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">세라믹 스킨 퍼펙터 쿠션</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="images/mdPick/mdPick5.jpg" alt="">
+                            </div>
+                            <div class="listType5__pdtInfo">
+                                <div class="categoryMark">아이 메이크업 부분 위너</div>
+                                <div class="pdtTxt">
+                                    <div class="pdtHead">원 테이크로 손 쉽게 완성하는 올 팔레트</div>
+                                    <div class="pdtBrand">AMUSE</div>
+                                    <div class="pdtName">비건 페이스 올 팔레트</div>
+                                    <div class="pdtPrice">
+                                        <div class="disCount">10%</div>
+                                        <div class="salePrice">19,000원</div>
+                                        <div class="originPrice">21,000원</div>
+                                    </div>
+                                    <div class="align vm" style="gap:1rem;">
+                                        <div class="pdtReview">
+                                            <div class="rating"></div>
+                                            <div class="score">4.9</div>
+                                            <div class="count">(리뷰178)</div>
+                                        </div>
+                                        <div class="likeAndCart">
+                                            <div class="icoLike"></div>
+                                            <div class="icoCart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+             </section>
+             <!-- miniBanner -->
+              <section>
+                <div class="bestProduct miniBannerContent mx1200">
+                    <div class="miniBanner miniBn1">
+                        <img src="images/miniBanner/miniBanner1.jpg" alt="">
+                    </div>
+                    <div class="miniBanner miniBn2">
+                        <img src="images/miniBanner/miniBanner2.jpg" alt="">
+                    </div>
+                </div>
+              </section>
+        </main>
+        <footer>
+            <div class="footerTop mx1200">
+                <div class="footerTop__left">
+                    <div class="logo"></div>
+                    <div class="sns">
+                        <a href="" class="snsItem insta"></a>
+                        <a href="" class="snsItem facebook"></a>
+                        <a href="" class="snsItem youtube"></a>
+                        <a href="" class="snsItem post"></a>
+                    </div>
+                    <div>©AMUSE all right reserved</div>
+                    <ul>
+                        <li>
+                            <a href="index.html">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="index.html">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="index.html">사업자정보확인</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerTop__center">
+                    <div>CUSTOMER CENTER</div>
+                    <div class="phoneNum">1833-0000</div>
+                    <div>
+                        <div>MON-FRI 9AM - 5PM</div>
+                        <div>LUNCH 12PM - 1PM</div>
+                        <div>SAT.SUN.HOLIDAY OFF</div>
+                    </div>
+                </div>
+                <div class="footerTop__right">
+                    <ul>
+                        <li>
+                            <a href="index.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="index.html">MYPAGE</a>
+                        </li>
+                        <li>
+                            <a href="index.html">STORE</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Q&A</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBot mx1200">
+                <p>주식회사 어뮤즈</p>
+                <ul>
+                    <li>대표이사 : 홍길동, 홍길동</li>
+                    <li>주소 : 경기도 성남시 분당구 분당내곡로</li>
+                    <li>전화 : 1833-0000(대표전화/고객센터)</li>
+                    <li>사업자등록번호 : 000-00-00000</li>
+                </ul>
+                <div>통신판매신고번호 : 2024-06-08</div>
+            </div>
+        </footer>
+        <script>
+            var swiper = new Swiper(".mySwiper.reviewBestSwiper1", {
+                effect: "cube",
+                grabCursor: true,
+                cubeEffect: {
+                    shadow: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94,
+                },
+                autoplay:{
+                    delay:2000,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+            var swiper = new Swiper(".mySwiper.reviewBestSwiper2", {
+                effect: "cube",
+                grabCursor: true,
+                cubeEffect: {
+                    shadow: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94,
+                },
+                autoplay:{
+                    delay:4000,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+    </div>
+</body>
+</html>
