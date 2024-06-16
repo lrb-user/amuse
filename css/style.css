@@ -86,10 +86,14 @@ html{
 }
 .scroll::-webkit-scrollbar-thumb{
     background-color: #ee9ca7;
+    border-radius: 10px;
+}
+.scroll::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
 }
 .scroll::-webkit-scrollbar-track{
-    width: 10px;
-    height: 10px;
+    background-color: #868686;
 }
 .fixedTop{
    width: 70px;
@@ -109,6 +113,11 @@ html{
    cursor: pointer;
    font-family: 'MoveSans-Bold';
    box-shadow: inset 0px 0px 5px 1px white
+}
+@media screen and (max-width:768px){
+    .fixedTop{
+        right: 50px;
+    }
 }
 /* header */
 .pointBox{
